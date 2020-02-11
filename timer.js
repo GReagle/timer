@@ -30,5 +30,7 @@ function update () {
 		clearInterval(g_intervalID);
 		document.getElementById("remains").innerHTML = "Expired";
 		document.getElementById("barFG").style.width = "0%";
+		let audio = new Audio("Goldberg-1a1-Ishizaka-pd-10s.mp3");
+		audio.play();
 	}
 }
