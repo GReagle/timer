@@ -32,5 +32,6 @@ function update () {
 		document.getElementById("barFG").style.width = "0%";
 		let audio = new Audio("Goldberg-1a1-Ishizaka-pd-10s.mp3");
 		audio.play();
+		if (document.getElementById("auto-repeat").checked) { startTimer(); }
 	}
 }

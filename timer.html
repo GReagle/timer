@@ -8,12 +8,14 @@
 	<script src = "timer.js" type = "text/javascript"/></script>
 </head>
 <body onload="startTimer()">
-  
-  <p> minutes:  <input id="minutes" value=5> </p>
-  <p> seconds:  <input id="seconds" value=0> </p>
-  <p> <button type="button" onclick="startTimer()">Start</button> </p>
+  <p>
+	<label for="minutes">minutes:</label> <input size="4" id="minutes" value=5>
+	<label for="seconds">seconds:</label> <input size="4" id="seconds" value=0>
+	<label for="auto-repeat">Automatically repeat?</label> <input type="checkbox" id="auto-repeat">
+  </p>
+  <p> <button type="button" onclick="startTimer()">Start Timer</button> </p>
   <hr>
-  <p id="remains">Remaining</p>
+  Remaining: <span id="remains">Time</span>
   <p> <div id="barBG"> <div id="barFG"></div> </div> </p>
   <p>If you like the alarm sound, you can find more at <a href="http://opengoldbergvariations.org/">Bach's Goldberg Variations, performed by Kimiko Ishizaka</a>.
 
